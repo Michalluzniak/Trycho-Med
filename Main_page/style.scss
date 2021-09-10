@@ -510,11 +510,13 @@ section#offer {
         .carousel__button__right {
             right: 0;
             margin-right: 20px;
+            cursor: pointer;
         }
 
         .carousel__button__left {
             left: 0;
             margin-left: 20px;
+            cursor: pointer;
         }
 
     }
@@ -540,6 +542,7 @@ section#offer {
             border: 1.5px solid white;
             margin: 0 20px;
             filter: drop-shadow(-1px 1px 4px black);
+            cursor: pointer;
         }
 
         .carousel__image__indicator.current {
