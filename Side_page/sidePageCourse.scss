@@ -82,3 +82,15 @@ header {
         }
     }
 }
+
+main.training__photo {
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+
+    img {
+        object-fit: 0 100px;
+        width: 100%;
+        height: 105%;
+    }
+}
