@@ -94,3 +94,268 @@ main.training__photo {
         height: 105%;
     }
 }
+
+footer {
+    height: 50vh;
+    width: 100%;
+
+    .contact__header {
+        height: 10vh;
+        width: 100%;
+        background-color: $primaryColor;
+        border-bottom: 2px solid white;
+
+        h2 {
+            text-align: center;
+            line-height: 10vh;
+            font-size: 3em;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+
+    .contact__container {
+        display: flex;
+        justify-content: space-around;
+        height: 35vh;
+        width: 100%;
+        background-color: $primaryColor;
+    }
+
+    .contact__info {
+        display: grid;
+        grid-template: 20% 1fr 1fr / 20% 1fr;
+        width: 20%;
+        height: 100%;
+        // background-color: #000;
+
+        h3 {
+            align-self: flex-end;
+            grid-area: 1/ 1 / 2 / 3;
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        i.fa-home {
+            align-self: center;
+            grid-area: 2 / 1 / 3 / 2;
+            color: white;
+            font-size: 2em;
+        }
+
+        p.home {
+            align-self: center;
+            grid-area: 2 / 2 / 3 / 3;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        i.fa-phone {
+            // align-self: center;
+            grid-area: 3 / 1 / 4 / 2;
+            color: white;
+            font-size: 2em;
+        }
+
+        p.phone {
+            // align-self: center;
+            grid-area: 3 / 2 / 4 / 3;
+            color: white;
+            font-size: 1.3em;
+        }
+    }
+
+    .media {
+        display: grid;
+        grid-template: 20% 1fr 1fr / 20% 1fr;
+        width: 20%;
+        height: 100%;
+        // background-color: #000;
+
+        h3 {
+            align-self: flex-end;
+            grid-area: 1/ 1 / 2 / 3;
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        i.fa-facebook-square {
+            align-self: center;
+            grid-area: 2 / 1 / 3 / 2;
+            color: white;
+            font-size: 2em;
+        }
+
+        p.facebook {
+            align-self: center;
+            grid-area: 2 / 2 / 3 / 3;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        i.fa-envelope {
+            grid-area: 3 / 1 / 4 / 2;
+            color: white;
+            font-size: 2em
+        }
+
+        p.email {
+            grid-area: 3 / 2 / 4 / 3;
+            color: white;
+            font-size: 1em;
+        }
+    }
+
+    .question__form {
+        display: grid;
+        grid-template: 20% 1fr/ 1fr;
+        width: 25%;
+        height: 100%;
+        // background-color: #000;
+
+        h3 {
+            grid-area: 1 / 1 / 2 / 2;
+            align-self: flex-end;
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        form {
+            display: grid;
+            grid-template: 10% 1fr 10%/ 1fr 1fr;
+            width: 100%;
+            height: 80%;
+
+
+            .user__name__input {
+                justify-self: flex-start;
+                grid-area: 1 / 1 / 2 / 2;
+                width: 98%;
+                height: 100%;
+                border: 1px solid black;
+                outline: none;
+
+
+                &::-webkit-input-placeholder {
+                    font-size: 1.2em;
+                }
+            }
+
+            .user__email__input {
+                justify-self: flex-start;
+                grid-area: 1 / 2 / 2 / 3;
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+                outline: none;
+
+                &::-webkit-input-placeholder {
+                    font-size: 1.2em;
+                }
+            }
+
+            label[for=user__message] {
+                grid-area: 2 / 1 / 3 / 3;
+                align-self: center;
+                width: 100%;
+                height: 95%;
+
+
+
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    resize: none;
+
+                    &:focus {
+                        border: 1px solid black;
+                    }
+
+                    &::-webkit-input-placeholder {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+
+            .email__button {
+                grid-area: 3 / 1 / 4 / 3;
+                width: 50%;
+                justify-self: center;
+                outline: none;
+                font-size: 1.1em;
+                text-transform: uppercase;
+                border: 1px solid black;
+
+                &:hover {
+                    background-color: $secondColor;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .map {
+        display: grid;
+        grid-template: 20% 1fr 30% / 1fr;
+        width: 25%;
+        height: 100%;
+        // background-color: #000;
+
+        h3 {
+            grid-area: 1 / 1 / 2 / 2;
+            align-self: flex-end;
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        .google_map {
+            grid-area: 2 / 1 / 4 / 2;
+            width: 100%;
+            height: 80%;
+        }
+    }
+
+    .copy {
+        position: relative;
+        height: 5vh;
+        width: 100%;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: flex-end;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background-color: #000;
+            height: 100%;
+            width: 100%;
+            opacity: 0.5;
+        }
+
+        h5 {
+            line-height: 5vh;
+            margin-right: 5%;
+            color: white;
+            font-size: .8em;
+            z-index: 2;
+        }
+
+        p {
+            line-height: 5vh;
+            text-align: end;
+            margin-right: 5%;
+            color: white;
+            font-size: .8em;
+            z-index: 2;
+        }
+    }
+}
