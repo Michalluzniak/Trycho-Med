@@ -68,29 +68,6 @@ header {
                 background-color: #fff;
 
 
-
-                &:last-of-type {
-                    position: relative;
-
-
-                    &:hover .contact__dropdown {
-                        top: 100%;
-                    }
-                }
-
-
-                .contact__dropdown {
-                    position: absolute;
-                    top: -100%;
-                    left: 0;
-                    background-color: #fff;
-                    height: 200%;
-                    width: 100%;
-                    z-index: -1;
-                    border-bottom: 2px solid $primaryColor;
-                    transition: .5s;
-                }
-
                 a {
                     position: relative;
                     text-decoration: none;
