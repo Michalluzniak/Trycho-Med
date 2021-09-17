@@ -24,6 +24,44 @@ div.site__container {
     margin: 0 auto;
 }
 
+div.phone__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    width: 0px;
+    background-color: $secondColor;
+    position: fixed;
+    top: 80%;
+    right: 8%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+
+
+    &:hover i {
+        color: yellow;
+    }
+
+    &.active {
+        height: 80px;
+        width: 80px;
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+
+    i {
+        display: inline-block;
+        font-size: 2em;
+        color: white;
+        transition: .2s;
+    }
+}
+
 header {
     display: flex;
     width: 100%;

@@ -47,7 +47,7 @@ carouselImages.style.transform = `translateX(${-slideWidth * index}px)`;
 const autoSlideChange = () => {
     slideInterval = setInterval(() => {
         nextSlide()
-    }, 200000000);
+    }, 5000);
 }
 
 const infiniteCarousel = () => {
@@ -126,3 +126,16 @@ carouselImages.addEventListener('mouseleave', autoSlideChange);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 dotsNavBar.addEventListener('click', chooseSlide);
+
+
+// phone phone__popup
+
+const popup = document.querySelector('.phone__popup');
+
+const phonePop = function () {
+    setTimeout(() => {
+        popup.classList.add('active');
+    }, 3000)
+}
+
+window.onload = phonePop;
