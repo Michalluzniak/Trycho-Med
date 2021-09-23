@@ -135,7 +135,14 @@ const popup = document.querySelector('.phone__popup');
 const phonePop = function () {
     setTimeout(() => {
         popup.classList.add('active');
-    }, 3000)
+    }, 1000)
 }
 
-window.onload = phonePop;
+const phonePopAnimation = function () {
+    setInterval(() => {
+        popup.classList.toggle('active__animation');
+    }, 100000);
+}
+
+phonePop();
+phonePopAnimation();

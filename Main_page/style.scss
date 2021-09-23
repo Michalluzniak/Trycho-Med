@@ -24,41 +24,92 @@ div.site__container {
     margin: 0 auto;
 }
 
-div.phone__popup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 0px;
-    width: 0px;
-    background-color: $secondColor;
+.popup__wrapper {
     position: fixed;
-    top: 80%;
-    right: 8%;
-    transform: translate(50%, -50%);
+    bottom: 40px;
+    right: 40px;
     border-radius: 50%;
-    visibility: hidden;
-    opacity: 0;
-    transition: 1s;
 
 
-    &:hover i {
-        color: yellow;
+    .contact__popup {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background: darkgoldenrod;
+        z-index: -1;
+        border-radius: 20px 20px 20px 20px;
     }
 
-    &.active {
-        height: 80px;
-        width: 80px;
-        visibility: visible;
+    &:hover .contact__popup {
+        animation: act 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        // animation-direction: reverse
+    }
+
+    &:hover .phone__popup {
+        border-radius: 20px 0px 20px 0px;
+    }
+
+
+    div.phone__popup {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0px;
+        width: 0px;
+        background-color: $secondColor;
+        // transform: translate(50%, 50%);
+        border-radius: 50%;
+        visibility: hidden;
         opacity: 1;
+        transition: .5s;
+
+
+
+        &.active {
+            height: 80px;
+            width: 80px;
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+        i {
+            display: inline-block;
+            font-size: 2em;
+            color: white;
+            transition: .3s;
+
+        }
 
     }
 
 
-    i {
-        display: inline-block;
-        font-size: 2em;
-        color: white;
-        transition: .2s;
+}
+
+
+
+
+
+@keyframes act {
+    0% {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    50% {
+        width: 200px;
+        height: 80px;
+    }
+
+
+    100% {
+        width: 200px;
+        height: 400px;
+
     }
 }
 
