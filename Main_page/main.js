@@ -141,8 +141,29 @@ const phonePop = function () {
 const phonePopAnimation = function () {
     setInterval(() => {
         popup.classList.toggle('active__animation');
-    }, 100000);
+    }, 1000);
 }
 
 phonePop();
 phonePopAnimation();
+
+
+
+// reverse animation for hover phone button
+
+// const wrapperPopup = document.querySelector('.popup__wrapper');
+// const contactPopup = document.querySelector('.contact__popup');
+
+// let flag = false;
+
+// const mouseOutFromBtn = function () {
+//     contactPopup.classList.add('reverse');
+
+//     console.log('works')
+// }
+// const mouseOnFromBtn = function () {
+//     contactPopup.classList.remove('reverse');
+// }
+
+// wrapperPopup.addEventListener('mouseleave', mouseOutFromBtn);
+// wrapperPopup.addEventListener('mouseenter', mouseOnFromBtn);
