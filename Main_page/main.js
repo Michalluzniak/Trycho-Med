@@ -47,7 +47,7 @@ carouselImages.style.transform = `translateX(${-slideWidth * index}px)`;
 const autoSlideChange = () => {
     slideInterval = setInterval(() => {
         nextSlide()
-    }, 5000);
+    }, 1000);
 }
 
 const infiniteCarousel = () => {
@@ -116,11 +116,25 @@ const chooseSlide = (e) => {
 
 autoSlideChange();
 
+
 carouselImages.addEventListener('transitionend', infiniteCarousel);
 
 carouselImages.addEventListener('mouseenter', () => {
     clearInterval(slideInterval)
 })
+
+prevBtn.addEventListener('mouseenter', () => {
+    clearInterval(slideInterval)
+})
+
+nextBtn.addEventListener('mouseenter', () => {
+    clearInterval(slideInterval)
+})
+
+dots.forEach(dot => dot.addEventListener('mouseenter', () => {
+    clearInterval(slideInterval)
+}))
+
 carouselImages.addEventListener('mouseleave', autoSlideChange);
 
 nextBtn.addEventListener('click', nextSlide);
@@ -128,13 +142,15 @@ prevBtn.addEventListener('click', prevSlide);
 dotsNavBar.addEventListener('click', chooseSlide);
 
 
+
+
 // phone phone__popup
 
-const popup = document.querySelector('.phone__popup');
+const wrapperPopup = document.querySelector('.popup__wrapper');
 
 const phonePop = function () {
     setTimeout(() => {
-        popup.classList.add('active');
+        wrapperPopup.classList.add('active');
     }, 1000)
 }
 
