@@ -8,6 +8,7 @@
         width: 100%;
         margin: 0;
         overflow: hidden;
+        height: 400vh;
     }
 
 
@@ -186,7 +187,7 @@
 
     #about__me {
         text-align: center;
-        height: 50vh;
+        height: auto;
 
         h2 {
             font-size: 1.5em;
@@ -205,7 +206,7 @@
 
         p {
             margin-top: 5%;
-            font-size: 0.6em;
+            font-size: 0.7em;
             width: 90%;
             margin-bottom: 2%;
             line-height: 120%;
@@ -233,7 +234,7 @@
         .problems__container {
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 60% 20px;
+            background-position: 60% 0;
 
             .problems__points {
                 min-height: 70%;
@@ -252,18 +253,11 @@
             }
 
             .diseases {
-                color: white;
                 font-size: 1em;
-                width: 100%;
-                height: 20%;
-                display: flex;
-                justify-content: center;
 
                 p {
-                    text-align: center;
                     width: 90%;
                     margin-bottom: 5%;
-                    z-index: 2;
 
                 }
             }
@@ -273,134 +267,57 @@
 
 
     section#offer {
-        height: 80vh;
-        width: 100%;
-        display: none;
 
         .offer__header {
-            width: 100%;
-            height: 10%;
-            background-color: $primaryColor;
-            margin-top: 3px;
-            margin-bottom: 3px;
 
             h2 {
-                font-size: 3em;
-                text-transform: uppercase;
-                font-family: 'Inter', sans-serif;
-                font-weight: 300;
-                color: white;
-                text-align: center;
-                line-height: 8vh;
+                font-size: 2em;
             }
         }
 
         .carousel {
-            position: relative;
-            width: 100%;
-            height: 95%;
-            // background-color: yellow;
 
             .carousel__images-container {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-
 
                 ul.carousel__images {
-                    width: 100%;
-                    height: 100%;
-                    list-style: none;
-                    display: flex;
-
 
                     .carousel__slide {
-                        min-width: 100%;
-                        height: 100%;
-                        position: relative;
 
                         h3 {
-                            position: absolute;
-                            top: 10%;
-                            left: 50%;
-                            width: 80%;
-                            transform: translate(-50%, - 50%);
-                            color: white;
-                            font-family: 'Inter', sans-serif;
-                            text-transform: uppercase;
-                            font-weight: 300;
-                            font-size: 4em;
-                            text-align: center;
-                            z-index: 2;
+                            font-size: 1.5em;
                         }
 
                         .carousel__slide__list__container {
-                            position: absolute;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, - 50%);
-                            width: 80%;
-                            height: 70%;
-                            z-index: 2;
+
 
                             ul {
-                                display: inline-block;
-                                color: white;
-                                font-size: 2em;
-                                list-style: disc;
 
                                 li {
-                                    margin-top: 20px;
-                                    margin-left: 1em;
-                                    font-size: 1.2em;
+                                    margin-top: 15px;
+                                    font-size: .8em;
                                 }
                             }
-                        }
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            object-position: center;
-                        }
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            background-color: #000;
-                            opacity: 0.2;
                         }
                     }
 
                     .sauna__ozonowa {
 
-                        ::after {
-                            opacity: 0.4;
+                        img {
+                            object-fit: auto;
+                            width: 100%;
+                            height: 100%;
+                            object-position: 80% 0%;
                         }
                     }
 
                     .peeling__glowy {
 
-                        p {
-                            position: absolute;
-                            color: white;
-                            font-size: 2em;
-                            width: 60%;
-                            top: 30%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            z-index: 2;
-                            text-align: center;
+                        img {
+                            object-position: 30% 0%;
                         }
                     }
+
+
 
                     .infuzja__tlenowa,
                     .prady__dersnoval,
@@ -408,12 +325,22 @@
                     .zabiegi__lodyga {
 
                         img {
-                            object-fit: cover;
-                            object-position: -50% 100%;
+                            object-fit: auto;
+                            width: 100%;
+                            height: 100%;
+                            object-position: 50% 0%;
                         }
+                    }
 
-                        &::after {
-                            opacity: 0.3;
+                    .zabiegi__lodyga {
+                        img {
+                            object-position: 20% 0%;
+                        }
+                    }
+
+                    .mezoterapia__drCyj {
+                        img {
+                            object-position: 10% 0%;
                         }
                     }
                 }
@@ -422,7 +349,7 @@
             .carousel__button {
                 position: absolute;
                 top: 50%;
-                font-size: 3em;
+                font-size: 1em;
                 color: white;
                 transition: .2s;
 
@@ -431,23 +358,23 @@
                 }
 
                 i.fa-chevron-left {
-                    filter: drop-shadow(1px 0px 3px black);
+                    filter: drop-shadow(1px 0px 2px black);
                 }
 
                 i.fa-chevron-right {
-                    filter: drop-shadow(-1px 0px 3px black);
+                    filter: drop-shadow(-1px 0px 2px black);
                 }
             }
 
             .carousel__button__right {
                 right: 0;
-                margin-right: 20px;
+                margin-right: 10px;
                 cursor: pointer;
             }
 
             .carousel__button__left {
                 left: 0;
-                margin-left: 20px;
+                margin-left: 10px;
                 cursor: pointer;
             }
 
@@ -468,11 +395,11 @@
             .carousel__image__indicator {
                 border: 0;
                 border-radius: 50%;
-                width: 15px;
-                height: 15px;
+                width: 8px;
+                height: 8px;
                 background-color: rgba(255, 255, 255, 0.8);
                 border: 1.5px solid white;
-                margin: 0 20px;
+                margin: 0 12px;
                 filter: drop-shadow(-1px 1px 4px black);
                 cursor: pointer;
             }

@@ -525,13 +525,12 @@ section#offer {
                         ul {
                             display: inline-block;
                             color: white;
-                            font-size: 2em;
                             list-style: disc;
 
                             li {
                                 margin-top: 20px;
                                 margin-left: 1em;
-                                font-size: 1.2em;
+                                font-size: 2em;
                             }
                         }
                     }
@@ -560,21 +559,6 @@ section#offer {
 
                     ::after {
                         opacity: 0.4;
-                    }
-                }
-
-                .peeling__glowy {
-
-                    p {
-                        position: absolute;
-                        color: white;
-                        font-size: 2em;
-                        width: 60%;
-                        top: 30%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        z-index: 2;
-                        text-align: center;
                     }
                 }
 

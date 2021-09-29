@@ -21,6 +21,7 @@ const createDiv = function () {
 window.onload = createDiv;
 
 //slider
+
 const carouselImages = document.querySelector('.carousel__images');
 let slides = [...carouselImages.children];
 const nextBtn = document.querySelector('.carousel__button__right');
@@ -40,15 +41,31 @@ lastClone.id = 'last-clone';
 carouselImages.append(firstClone);
 carouselImages.prepend(lastClone);
 
-const slideWidth = slides[index].clientWidth;
+let slideWidth = slides[index].clientWidth;
+
 carouselImages.style.transform = `translateX(${-slideWidth * index}px)`;
+
+
+window.addEventListener('resize', () => {
+    slideWidth = slides[index].clientWidth;
+})
+
+
+
+
+
+
 
 
 const autoSlideChange = () => {
     slideInterval = setInterval(() => {
-        nextSlide()
-    }, 1000);
+        if (window.innerWidth > 1000) {
+            nextSlide()
+            console.log('1')
+        }
+    }, 2000);
 }
+
 
 const infiniteCarousel = () => {
     let slides = [...carouselImages.children];
@@ -119,20 +136,30 @@ autoSlideChange();
 
 carouselImages.addEventListener('transitionend', infiniteCarousel);
 
+
+
 carouselImages.addEventListener('mouseenter', () => {
-    clearInterval(slideInterval)
+    if (window.innerWidth > 1000) {
+        clearInterval(slideInterval)
+    }
 })
 
 prevBtn.addEventListener('mouseenter', () => {
-    clearInterval(slideInterval)
+    if (window.innerWidth > 1000) {
+        clearInterval(slideInterval)
+    }
 })
 
 nextBtn.addEventListener('mouseenter', () => {
-    clearInterval(slideInterval)
+    if (window.innerWidth > 1000) {
+        clearInterval(slideInterval)
+    }
 })
 
 dots.forEach(dot => dot.addEventListener('mouseenter', () => {
-    clearInterval(slideInterval)
+    if (window.innerWidth > 1000) {
+        clearInterval(slideInterval)
+    }
 }))
 
 carouselImages.addEventListener('mouseleave', autoSlideChange);
@@ -140,7 +167,6 @@ carouselImages.addEventListener('mouseleave', autoSlideChange);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 dotsNavBar.addEventListener('click', chooseSlide);
-
 
 
 
@@ -154,11 +180,4 @@ const phonePop = function () {
     }, 1000)
 }
 
-const phonePopAnimation = function () {
-    setInterval(() => {
-        popup.classList.toggle('active__animation');
-    }, 1000);
-}
-
 phonePop();
-phonePopAnimation();
