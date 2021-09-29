@@ -8,7 +8,7 @@
         width: 100%;
         margin: 0;
         overflow: hidden;
-        height: 400vh;
+        // min-height: 600vh;
     }
 
 
@@ -264,8 +264,6 @@
         }
     }
 
-
-
     section#offer {
 
         .offer__header {
@@ -317,8 +315,6 @@
                         }
                     }
 
-
-
                     .infuzja__tlenowa,
                     .prady__dersnoval,
                     .mezoteriapia__iglowa,
@@ -347,15 +343,7 @@
             }
 
             .carousel__button {
-                position: absolute;
-                top: 50%;
                 font-size: 1em;
-                color: white;
-                transition: .2s;
-
-                &:hover {
-                    color: $secondColor;
-                }
 
                 i.fa-chevron-left {
                     filter: drop-shadow(1px 0px 2px black);
@@ -381,191 +369,115 @@
         }
 
         .carousel__nav {
-            position: absolute;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 3%;
-            margin-bottom: 10px;
-            // background-color: #333;
-            opacity: 0.6;
 
             .carousel__image__indicator {
-                border: 0;
-                border-radius: 50%;
                 width: 8px;
                 height: 8px;
-                background-color: rgba(255, 255, 255, 0.8);
-                border: 1.5px solid white;
+                border: 1px solid white;
                 margin: 0 12px;
-                filter: drop-shadow(-1px 1px 4px black);
-                cursor: pointer;
-            }
-
-            .carousel__image__indicator.current {
-                background-color: $secondColor;
-                ;
             }
         }
     }
 
 
     section.first__visit {
-        height: 100vh;
-        width: 100%;
-        @include flexCenter(column, nowrap);
-        display: none;
+        height: auto;
 
         h2 {
-            font-family: 'Inter', sans-serif;
-            text-align: center;
-            font-weight: 300;
-            font-size: 4em;
-            text-transform: uppercase;
-            margin-top: 5%;
+            font-size: 1.5em;
 
             &::after {
-                content: "";
-                display: block;
-                height: 5px;
-                width: 600px;
-                margin: 3% auto;
-                background-color: $primaryColor;
+                height: 2px;
+                width: 250px;
             }
         }
 
         p {
-            margin-top: auto;
-            font-size: 2em;
-            width: 60%;
-            text-align: center;
-
-            &:nth-of-type(2) {
-                margin-bottom: 3%;
-            }
+            font-size: .7em;
+            width: 90%;
 
             &:nth-of-type(2):after {
-                content: "";
-                display: block;
-                height: 5px;
-                width: 600px;
-                margin: 3% auto;
-                background-color: $primaryColor;
+                height: 2px;
+                width: 250px;
             }
         }
     }
 
     footer {
-        height: 50vh;
-        width: 100%;
-        display: none;
 
         .contact__header {
-            height: 8vh;
-            width: 100%;
-            background-color: $primaryColor;
-            border-bottom: 3px solid white;
+
 
             h2 {
-                font-family: 'Inter', sans-serif;
-                text-align: center;
-                line-height: 8vh;
-                font-size: 3em;
-                font-weight: 300;
-                text-transform: uppercase;
-                color: white;
+                font-size: 1.5em;
             }
         }
 
         .contact__container {
-            display: flex;
-            justify-content: space-around;
-            height: 37vh;
-            width: 100%;
-            background-color: $primaryColor;
+            height: 20vh;
         }
 
         .contact__info {
-            display: grid;
-            grid-template: 20% 1fr 1fr / 20% 1fr;
-            width: 20%;
+            margin-top: 3%;
+            width: 45%;
             height: 100%;
+            margin-left: 2.5%;
+
 
             h3 {
                 align-self: flex-end;
                 grid-area: 1/ 1 / 2 / 3;
                 color: white;
-                font-size: 2em;
+                font-size: 1.2em;
                 font-weight: 400;
+                // justify-self: center;
             }
 
             i.fa-home {
-                align-self: center;
-                grid-area: 2 / 1 / 3 / 2;
-                color: white;
-                font-size: 2em;
+                font-size: 1em;
             }
 
             p.home {
-                align-self: center;
-                grid-area: 2 / 2 / 3 / 3;
-                color: white;
-                font-size: 1.3em;
+                font-size: .8em;
             }
 
             i.fa-phone {
                 grid-area: 3 / 1 / 4 / 2;
                 color: white;
-                font-size: 2em;
+                font-size: 1em;
             }
 
             p.phone {
                 grid-area: 3 / 2 / 4 / 3;
                 color: white;
-                font-size: 1.3em;
+                font-size: .8em;
             }
         }
 
         .media {
-            display: grid;
-            grid-template: 20% 1fr 1fr / 20% 1fr;
-            width: 20%;
-            height: 100%;
+            width: 45%;
+            margin-top: 3%;
+            margin-right: 2.5%;
 
             h3 {
-                align-self: flex-end;
-                grid-area: 1/ 1 / 2 / 3;
-                color: white;
-                font-size: 2em;
-                font-weight: 400;
+                font-size: 1.2em;
+
             }
 
             i.fa-facebook-square {
-                align-self: center;
-                grid-area: 2 / 1 / 3 / 2;
-                color: white;
-                font-size: 2em;
+                font-size: 1em;
             }
 
             p.facebook {
-                align-self: center;
-                grid-area: 2 / 2 / 3 / 3;
-                color: white;
-                font-size: 1.3em;
+                font-size: .8em;
             }
 
             i.fa-envelope {
-                grid-area: 3 / 1 / 4 / 2;
-                color: white;
-                font-size: 2em
+                font-size: 1em
             }
 
             p.email {
-                grid-area: 3 / 2 / 4 / 3;
-                color: white;
-                font-size: 1em;
+                font-size: .6em;
             }
         }
 
@@ -574,6 +486,7 @@
             grid-template: 20% 1fr/ 1fr;
             width: 25%;
             height: 100%;
+            display: none;
 
             h3 {
                 grid-area: 1 / 1 / 2 / 2;
@@ -666,6 +579,7 @@
             grid-template: 20% 1fr 30% / 1fr;
             width: 25%;
             height: 100%;
+            display: none;
 
             h3 {
                 grid-area: 1 / 1 / 2 / 2;
@@ -683,30 +597,13 @@
         }
 
         .copy {
-            position: relative;
             height: 5vh;
-            width: 100%;
-            background-color: $primaryColor;
-            display: flex;
-            justify-content: flex-end;
-
-            &:after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: block;
-                background-color: #000;
-                height: 100%;
-                width: 100%;
-                opacity: 0.5;
-            }
 
             h2 {
                 line-height: 5vh;
                 margin-right: 5%;
                 color: white;
-                font-size: .8em;
+                font-size: .4em;
                 z-index: 2;
             }
 
@@ -715,7 +612,7 @@
                 text-align: end;
                 margin-right: 5%;
                 color: white;
-                font-size: .8em;
+                font-size: .3em;
                 z-index: 2;
             }
         }

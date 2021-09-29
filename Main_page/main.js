@@ -51,12 +51,6 @@ window.addEventListener('resize', () => {
 })
 
 
-
-
-
-
-
-
 const autoSlideChange = () => {
     slideInterval = setInterval(() => {
         if (window.innerWidth > 1000) {
@@ -162,7 +156,11 @@ dots.forEach(dot => dot.addEventListener('mouseenter', () => {
     }
 }))
 
-carouselImages.addEventListener('mouseleave', autoSlideChange);
+carouselImages.addEventListener('mouseleave', () => {
+    if (window.innerWidth > 1000) {
+        autoSlideChange();
+    }
+});
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);

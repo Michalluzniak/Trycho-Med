@@ -450,6 +450,7 @@ main.about__person {
 }
 
 section#offer {
+    position: relative;
     height: 80vh;
     width: 100%;
 
@@ -472,10 +473,8 @@ section#offer {
     }
 
     .carousel {
-        position: relative;
         width: 100%;
-        height: 95%;
-        // background-color: yellow;
+        height: 90%;
 
         .carousel__images-container {
             width: 100%;
@@ -586,8 +585,10 @@ section#offer {
             color: white;
             transition: .2s;
 
-            &:hover {
-                color: $secondColor;
+            @media (min-width: 900px) {
+                &:hover {
+                    color: $secondColor;
+                }
             }
 
             i.fa-chevron-left {
@@ -620,13 +621,10 @@ section#offer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 3%;
         margin-bottom: 10px;
-        // background-color: #333;
         opacity: 0.6;
 
         .carousel__image__indicator {
-            border: 0;
             border-radius: 50%;
             width: 15px;
             height: 15px;
@@ -689,7 +687,6 @@ section.first__visit {
 }
 
 footer {
-    height: 50vh;
     width: 100%;
 
     .contact__header {
@@ -712,7 +709,7 @@ footer {
     .contact__container {
         display: flex;
         justify-content: space-around;
-        height: 37vh;
+        height: 30vh;
         width: 100%;
         background-color: $primaryColor;
     }
