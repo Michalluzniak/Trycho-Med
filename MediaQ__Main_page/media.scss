@@ -965,6 +965,25 @@
         }
     }
 
+    main.about__person {
+        background-position: 80%;
+
+        div.introduction {
+
+            h1 {
+                font-size: 2.5em;
+
+                &:nth-of-type(2) {
+                    font-size: 2em;
+                }
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    }
+
     #about__me {
 
         h2 {
