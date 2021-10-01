@@ -178,7 +178,11 @@ header {
         }
     }
 
-    nav {
+    div.small__menu {
+        display: none;
+    }
+
+    nav.large__menu {
         width: 85%;
         height: 100%;
         z-index: 2;

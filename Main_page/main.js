@@ -53,7 +53,7 @@ window.addEventListener('resize', () => {
 
 const autoSlideChange = () => {
     slideInterval = setInterval(() => {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 900) {
             nextSlide()
             console.log('1')
         }
@@ -179,3 +179,16 @@ const phonePop = function () {
 }
 
 phonePop();
+
+
+// HAM Menu Button
+
+const hamMenu = document.querySelector('.ham__menu');
+const sideMenu = document.querySelector('.side__menu');
+const hamMenuLine = document.querySelector('.ham__menu span');
+
+hamMenu.addEventListener('click', () => {
+    sideMenu.classList.toggle('active');
+    hamMenu.classList.toggle('active');
+    console.log('1')
+})
