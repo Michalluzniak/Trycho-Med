@@ -186,9 +186,17 @@ phonePop();
 const hamMenu = document.querySelector('.ham__menu');
 const sideMenu = document.querySelector('.side__menu');
 const hamMenuLine = document.querySelector('.ham__menu span');
+const navButtons = document.querySelectorAll('.nav__btn')
 
-hamMenu.addEventListener('click', () => {
+const openSideMenu = () => {
     sideMenu.classList.toggle('active');
     hamMenu.classList.toggle('active');
-    console.log('1')
-})
+}
+
+const closeSideMenu = () => {
+    sideMenu.classList.toggle('active');
+    hamMenu.classList.toggle('active');
+}
+
+hamMenu.addEventListener('click', openSideMenu)
+navButtons.forEach(btn => btn.addEventListener('click', closeSideMenu));
