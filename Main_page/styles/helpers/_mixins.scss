@@ -1,0 +1,17 @@
+@mixin flexCenter($direction, $wrap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin sectionHeading {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: white;
+    line-height: 8vh;
+}

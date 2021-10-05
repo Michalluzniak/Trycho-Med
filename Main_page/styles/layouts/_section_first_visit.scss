@@ -1,0 +1,123 @@
+section.first__visit {
+    height: 100vh;
+    width: 100%;
+    @include flexCenter(column, nowrap);
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 4em;
+        text-transform: uppercase;
+        margin-top: 5%;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 600px;
+            margin: 3% auto;
+            background-color: $primaryColor;
+        }
+    }
+
+    p {
+        margin-top: auto;
+        font-size: 2em;
+        width: 60%;
+        text-align: center;
+
+        &:nth-of-type(2) {
+            margin-bottom: 3%;
+        }
+
+        &:nth-of-type(2):after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 600px;
+            margin: 3% auto;
+            background-color: $primaryColor;
+        }
+    }
+}
+
+
+@media (orientation: portrait) and (min-width:320px) {
+
+    section.first__visit {
+        height: auto;
+
+        h2 {
+            font-size: 1.5em;
+
+            &::after {
+                height: 2px;
+                width: 250px;
+            }
+        }
+
+        p {
+            font-size: .7em;
+            width: 90%;
+
+            &:nth-of-type(2):after {
+                height: 2px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) and (min-width:360px) {
+
+    section.first__visit {
+        height: auto;
+
+        h2 {
+            font-size: 2em;
+
+            &::after {
+                height: 2px;
+                width: 350px;
+            }
+        }
+
+        p {
+            font-size: 1em;
+            width: 85%;
+
+            &:nth-of-type(2):after {
+                height: 2px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (orientation:portrait) and (min-width:481px) {
+
+    section.first__visit {
+        height: auto;
+
+        h2 {
+            font-size: 3em;
+
+            &::after {
+                height: 2px;
+                width: 350px;
+            }
+        }
+
+        p {
+            font-size: 2em;
+            width: 85%;
+
+            &:nth-of-type(2):after {
+                height: 2px;
+                width: 350px;
+            }
+        }
+    }
+
+}
