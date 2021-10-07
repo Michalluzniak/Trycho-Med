@@ -48,7 +48,7 @@ main.about__person {
     }
 }
 
-@media (orientation: portrait) and (min-width:320px) {
+@media (orientation: portrait) and (min-width:20em) {
     main.about__person {
         background-position: 80%;
 
@@ -68,44 +68,9 @@ main.about__person {
         }
     }
 
-
-    #about__me {
-        text-align: center;
-        height: auto;
-
-        h2 {
-            font-size: 1.5em;
-            margin-top: 3%;
-        }
-
-        h3 {
-            font-size: 1.2em;
-
-            &::before {
-                margin: 3% auto;
-                height: 2px;
-                width: 250px;
-            }
-        }
-
-        p {
-            margin-top: 5%;
-            font-size: 0.7em;
-            width: 90%;
-            margin-bottom: 2%;
-            line-height: 120%;
-
-            &::after {
-                height: 2px;
-                width: 250px;
-                margin: 3% auto;
-            }
-        }
-    }
-
 }
 
-@media (orientation: portrait) and (min-width:360px) {
+@media (orientation: portrait) and (min-width:22.5em) {
 
     main.about__person {
         background-position: 80%;
@@ -128,7 +93,7 @@ main.about__person {
 
 }
 
-@media (orientation:portrait) and (min-width:481px) {
+@media (orientation:portrait) and (min-width:30em) {
 
     main.about__person {
         background-position: 80%;
@@ -136,16 +101,42 @@ main.about__person {
         div.introduction {
 
             h1 {
-                font-size: 4em;
+                font-size: 3em;
 
                 &:nth-of-type(2) {
-                    font-size: 3.5em;
+                    font-size: 2.2em;
                 }
             }
 
             h2 {
-                font-size: 2em;
+                font-size: 1.5em;
             }
         }
     }
+}
+
+@media (min-width:40em) and (max-width:64em) {}
+
+//Landscape orientation
+
+@media (orientation:landscape) and (min-width:30em) and (max-width:55em) {
+    main.about__person {
+        background-position: 80%;
+
+        div.introduction {
+
+            h1 {
+                font-size: 3em;
+
+                &:nth-of-type(2) {
+                    font-size: 2em;
+                }
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
 }

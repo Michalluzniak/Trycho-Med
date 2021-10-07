@@ -43,7 +43,7 @@
     }
 }
 
-@media (orientation: portrait) and (min-width:320px) {
+@media (orientation: portrait) and (min-width:20em) {
 
     #about__me {
         text-align: center;
@@ -81,7 +81,7 @@
 }
 
 
-@media (orientation: portrait) and (min-width:360px) {
+@media (orientation: portrait) and (min-width:22.5em) {
 
     #about__me {
 
@@ -110,7 +110,7 @@
     }
 }
 
-@media (orientation:portrait) and (min-width:481px) {
+@media (orientation:portrait) and (min-width:30em) {
 
     #about__me {
 
@@ -137,4 +137,44 @@
             }
         }
     }
+}
+
+//Landscape orientation
+
+@media (orientation:landscape) and (min-width:30em) and (max-width:55em) {
+
+    #about__me {
+        text-align: center;
+        height: auto;
+
+        h2 {
+            font-size: 3em;
+            margin-top: 3%;
+        }
+
+        h3 {
+            font-size: 2em;
+
+            &::before {
+                margin: 3% auto;
+                height: 2px;
+                width: 250px;
+            }
+        }
+
+        p {
+            margin-top: 5%;
+            font-size: 1.5em;
+            width: 90%;
+            margin-bottom: 2%;
+            line-height: 120%;
+
+            &::after {
+                height: 2px;
+                width: 250px;
+                margin: 3% auto;
+            }
+        }
+    }
+
 }

@@ -254,7 +254,7 @@ footer {
     }
 }
 
-@media (orientation: portrait) and (min-width:320px) {
+@media (orientation: portrait) and (min-width:20em) {
     footer {
 
         .contact__header {
@@ -471,9 +471,9 @@ footer {
     }
 }
 
-@media (orientation: portrait) and (min-width:360px) {}
+@media (orientation: portrait) and (min-width:22.5em) {}
 
-@media (orientation:portrait) and (min-width:481px) {
+@media (orientation:portrait) and (min-width:30em) {
 
     footer {
 
@@ -689,5 +689,231 @@ footer {
             }
         }
     }
+
+}
+
+@media (min-width:48em) and (max-width:64em) {}
+
+
+//Landscape
+
+@media (orientation:landscape) and (min-width:30em) and (max-width:40em) {
+
+    footer {
+
+        .contact__header {
+            height: 15vh;
+
+            h2 {
+                font-size: 3em;
+                line-height: 15vh;
+            }
+        }
+
+        .contact__container {
+            height: 30vh;
+        }
+
+        .contact__info {
+            margin-top: 3%;
+            width: 45%;
+            height: 100%;
+            margin-left: 2.5%;
+
+
+            h3 {
+                align-self: flex-end;
+                grid-area: 1/ 1 / 2 / 3;
+                color: white;
+                font-size: 2em;
+                font-weight: 400;
+                // justify-self: center;
+            }
+
+            i.fa-home {
+                font-size: 1em;
+            }
+
+            p.home {
+                font-size: .8em;
+            }
+
+            i.fa-phone {
+                grid-area: 3 / 1 / 4 / 2;
+                color: white;
+                font-size: 1em;
+            }
+
+            p.phone {
+                grid-area: 3 / 2 / 4 / 3;
+                color: white;
+                font-size: .8em;
+            }
+        }
+
+        .media {
+            width: 45%;
+            margin-top: 3%;
+            margin-right: 2.5%;
+
+            h3 {
+                font-size: 2em;
+
+            }
+
+            i.fa-facebook-square {
+                font-size: 1em;
+            }
+
+            p.facebook {
+                font-size: .8em;
+            }
+
+            i.fa-envelope {
+                font-size: 1em
+            }
+
+            p.email {
+                font-size: .8em;
+            }
+        }
+
+        .question__form {
+            display: grid;
+            grid-template: 20% 1fr/ 1fr;
+            width: 25%;
+            height: 100%;
+            display: none;
+
+            h3 {
+                grid-area: 1 / 1 / 2 / 2;
+                align-self: flex-end;
+                color: white;
+                font-size: em;
+                font-weight: 400;
+            }
+
+            form {
+                position: relative;
+                display: grid;
+                grid-template: 10% 1fr 10%/ 1fr 1fr;
+                width: 100%;
+                height: 80%;
+
+
+                .user__name__input {
+                    justify-self: flex-start;
+                    grid-area: 1 / 1 / 2 / 2;
+                    width: 98%;
+                    height: 100%;
+                    border: 1px solid black;
+                    outline: none;
+
+
+                    &::-webkit-input-placeholder {
+                        font-size: 1.2em;
+                    }
+                }
+
+                .user__email__input {
+                    justify-self: flex-start;
+                    grid-area: 1 / 2 / 2 / 3;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid black;
+                    outline: none;
+
+                    &::-webkit-input-placeholder {
+                        font-size: 1.2em;
+                    }
+                }
+
+                label[for=user__message] {
+                    grid-area: 2 / 1 / 4 / 3;
+                    align-self: center;
+                    width: 100%;
+                    height: 95%;
+
+
+
+                    textarea {
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        resize: none;
+
+                        &:focus {
+                            border: 1px solid black;
+                        }
+
+                        &::-webkit-input-placeholder {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+
+                .email__button {
+                    position: absolute;
+                    bottom: 2.5%;
+                    right: 0;
+                    width: 30%;
+                    justify-self: center;
+                    outline: none;
+                    font-size: 1.1em;
+                    text-transform: uppercase;
+                    border: 1px solid $primaryColor;
+
+                    &:hover {
+                        background-color: $secondColor;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .map {
+            display: grid;
+            grid-template: 20% 1fr 30% / 1fr;
+            width: 25%;
+            height: 100%;
+            display: none;
+
+            h3 {
+                grid-area: 1 / 1 / 2 / 2;
+                align-self: flex-end;
+                color: white;
+                font-size: 2em;
+                font-weight: 400;
+            }
+
+            .google_map {
+                grid-area: 2 / 1 / 4 / 2;
+                width: 100%;
+                height: 80%;
+            }
+        }
+
+        .copy {
+            height: 5vh;
+
+            h2 {
+                line-height: 5vh;
+                margin-right: 5%;
+                color: white;
+                font-size: .6em;
+                z-index: 2;
+            }
+
+            p {
+                line-height: 5vh;
+                text-align: end;
+                margin-right: 5%;
+                color: white;
+                font-size: .5em;
+                z-index: 2;
+            }
+        }
+    }
+
 
 }

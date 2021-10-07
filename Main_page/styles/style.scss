@@ -17,16 +17,16 @@ div.site__container {
     max-width: 1300px;
     margin: 0 auto;
 
-    @import "layouts/_header";
-    @import "layouts/_main_about_person";
-    @import "layouts/_section_about_me";
-    @import "layouts/_section_problems";
-    @import "layouts/_section_offer";
-    @import "layouts/_section_first_visit";
-    @import "layouts/_footer";
+    @import "layouts/_1-header";
+    @import "layouts/_2-main_about_person";
+    @import "layouts/_3-section_about_me";
+    @import "layouts/_4-section_problems";
+    @import "layouts/_5-section_offer";
+    @import "layouts/_6-section_first_visit";
+    @import "layouts/_7-footer";
 }
 
-@media (orientation: portrait) and (min-width:320px) {
+@media (min-width:320px) {
 
     div.site__container {
         overflow: hidden;

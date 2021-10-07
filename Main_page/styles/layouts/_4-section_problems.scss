@@ -115,7 +115,7 @@
 }
 
 
-@media (orientation: portrait) and (min-width:320px) {
+@media (orientation: portrait) and (min-width:20em) {
 
     .problems__section {
         height: 100vh;
@@ -162,7 +162,7 @@
     }
 }
 
-@media (orientation: portrait) and (min-width:360px) {
+@media (orientation: portrait) and (min-width:22.5em) {
 
     .problems__section {
         height: 100vh;
@@ -204,10 +204,10 @@
     }
 }
 
-@media (orientation:portrait) and (min-width:481px) {
+@media (orientation:portrait) and (min-width:30em) {
 
     .problems__section {
-        height: 100vh;
+        height: 150vh;
 
         .problems__header {
             height: 8vh;
@@ -240,6 +240,105 @@
 
             .diseases {
                 font-size: 2em;
+
+                p {
+                    width: 90%;
+                    margin-bottom: 5%;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (orientation:portrait) and (min-width:48em) and (max-width:64em) {
+
+    .problems__section {
+        height: 150vh;
+
+        .problems__header {
+            height: 8vh;
+
+            h2 {
+                font-size: 3em;
+                left: 200%;
+            }
+        }
+
+        .problems__container {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 60% 0;
+
+            .problems__points {
+                min-height: 70%;
+
+                .allPoints {
+                    height: 60px;
+                    width: 60px;
+
+                    p {
+                        left: 140%;
+                        font-size: 1.5em;
+
+                    }
+                }
+            }
+
+            .diseases {
+                font-size: 2em;
+
+                p {
+                    width: 90%;
+                    margin-bottom: 5%;
+
+                }
+            }
+        }
+    }
+}
+
+//Landscape
+
+@media (orientation:landscape) and (min-width:30em) and (max-width:40em) {
+
+    .problems__section {
+        height: 200vh;
+
+        .problems__header {
+            height: 15vh;
+
+            h2 {
+                font-size: 2em;
+                line-height: 15vh;
+            }
+        }
+
+        .problems__container {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 60% 0;
+            height: calc(100% - 15vh);
+
+            .problems__points {
+                min-height: 70%;
+
+                .allPoints {
+                    height: 45px;
+                    width: 45px;
+
+                    p {
+                        left: 150%;
+                        font-size: .8em;
+                        font-weight: 700;
+                        width: 300%;
+                    }
+                }
+            }
+
+            .diseases {
+                font-size: 1.5em;
 
                 p {
                     width: 90%;
