@@ -54,7 +54,7 @@ window.addEventListener("load", function () {
 
     const autoSlideChange = () => {
         slideInterval = setInterval(() => {
-            if (window.innerWidth > 900) {
+            if (window.innerWidth > 1100) {
                 nextSlide()
                 console.log('1')
             }
@@ -134,31 +134,31 @@ window.addEventListener("load", function () {
 
 
     carouselImages.addEventListener('mouseenter', () => {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1100) {
             clearInterval(slideInterval)
         }
     })
 
     prevBtn.addEventListener('mouseenter', () => {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1100) {
             clearInterval(slideInterval)
         }
     })
 
     nextBtn.addEventListener('mouseenter', () => {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1100) {
             clearInterval(slideInterval)
         }
     })
 
     dots.forEach(dot => dot.addEventListener('mouseenter', () => {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1100) {
             clearInterval(slideInterval)
         }
     }))
 
     carouselImages.addEventListener('mouseleave', () => {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1100) {
             autoSlideChange();
         }
     });

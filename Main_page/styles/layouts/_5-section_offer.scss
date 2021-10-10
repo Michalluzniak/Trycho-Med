@@ -41,13 +41,13 @@ section#offer {
                         position: absolute;
                         top: 10%;
                         left: 50%;
-                        width: 80%;
+                        width: 100%;
                         transform: translate(-50%, - 50%);
                         color: white;
                         font-family: 'Inter', sans-serif;
                         text-transform: uppercase;
                         font-weight: 300;
-                        font-size: 4em;
+                        font-size: 3em;
                         text-align: center;
                         z-index: 2;
                     }
@@ -97,9 +97,10 @@ section#offer {
                     }
                 }
 
-                .sauna__ozonowa {
+                .sauna__ozonowa,
+                .osocze {
 
-                    ::after {
+                    &::after {
                         opacity: 0.4;
                     }
                 }
@@ -439,7 +440,7 @@ section#offer {
 
 //Landscape orientation
 
-@media (orientation:landscape) and (min-width:30em) and (max-width:40em) {
+@media (orientation:landscape) and (min-width:30em) {
 
     section#offer {
         height: 100vh;
@@ -448,7 +449,7 @@ section#offer {
             height: 15vh;
 
             h2 {
-                font-size: 2em;
+                font-size: 2.5em;
                 line-height: 15vh;
             }
         }
@@ -463,11 +464,10 @@ section#offer {
                     .carousel__slide {
 
                         h3 {
-                            font-size: 2em;
+                            font-size: 1.5em;
                         }
 
                         .carousel__slide__list__container {
-
 
                             ul {
 
@@ -554,6 +554,279 @@ section#offer {
             .carousel__image__indicator {
                 width: 10px;
                 height: 10px;
+            }
+
+            .carousel__image__indicator.current {
+                background-color: $secondColor;
+                ;
+            }
+        }
+    }
+}
+
+@media (orientation:landscape) and (min-width:50.1em) and (max-width:63.9em) {
+
+    section#offer {
+
+        .offer__header {
+
+            h2 {
+                font-size: 3em;
+            }
+        }
+
+        .carousel {
+
+            .carousel__images-container {
+
+                ul.carousel__images {
+
+                    .carousel__slide {
+
+                        h3 {
+                            font-size: 2em;
+                        }
+
+                        .carousel__slide__list__container {
+
+                            ul {
+
+                                li {
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+
+                    .sauna__ozonowa,
+                    .prady__dersnoval,
+                    .peeling__glowy {
+
+                        img {
+                            object-position: 0% 50%;
+                        }
+                    }
+
+
+                    .masaz__glowy {
+                        img {
+                            object-position: 0% 80%;
+                        }
+                    }
+
+                    .zabiegi__lodyga {
+                        img {
+                            object-position: 20% 0%;
+                        }
+                    }
+
+                    .mezoterapia__drCyj {
+                        img {
+                            object-position: 10% 30%;
+                        }
+                    }
+                }
+            }
+
+            .carousel__button {
+                font-size: 1.5em;
+            }
+        }
+
+        .carousel__nav {
+
+            .carousel__image__indicator {
+                width: 10px;
+                height: 10px;
+            }
+
+            .carousel__image__indicator.current {
+                background-color: $secondColor;
+                ;
+            }
+        }
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:64em) and (max-width:70em) {
+    section#offer {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+
+        .offer__header {
+            width: 100%;
+            height: 10%;
+            background-color: $primaryColor;
+            margin-top: 3px;
+            margin-bottom: 3px;
+
+            h2 {
+                @include sectionHeading;
+            }
+        }
+
+        .carousel {
+            width: 100%;
+            height: 90%;
+
+            .carousel__images-container {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+
+                ul.carousel__images {
+                    width: 100%;
+                    height: 100%;
+                    list-style: none;
+                    display: flex;
+
+
+                    .carousel__slide {
+                        min-width: 100%;
+                        height: 100%;
+                        position: relative;
+
+                        h3 {
+                            position: absolute;
+                            top: 10%;
+                            left: 50%;
+                            width: 100%;
+                            transform: translate(-50%, - 50%);
+                            color: white;
+                            font-family: 'Inter', sans-serif;
+                            text-transform: uppercase;
+                            font-weight: 300;
+                            font-size: 2.5em;
+                            text-align: center;
+                            z-index: 2;
+                        }
+
+                        .carousel__slide__list__container {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, - 50%);
+                            width: 80%;
+                            height: 70%;
+                            z-index: 2;
+
+                            ul {
+                                display: inline-block;
+                                color: white;
+                                list-style: disc;
+
+                                li {
+                                    margin-top: 20px;
+                                    margin-left: 1em;
+                                    font-size: 1.5em;
+                                }
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #000;
+                            opacity: 0.2;
+                        }
+                    }
+
+                    .sauna__ozonowa,
+                    .osocze {
+
+                        &::after {
+                            opacity: 0.4;
+                        }
+                    }
+
+                    .infuzja__tlenowa,
+                    .prady__dersnoval,
+                    .mezoteriapia__iglowa,
+                    .zabiegi__lodyga {
+
+                        img {
+                            object-fit: cover;
+                            object-position: -50% 100%;
+                        }
+
+                        &::after {
+                            opacity: 0.3;
+                        }
+                    }
+                }
+            }
+
+            .carousel__button {
+                position: absolute;
+                top: 50%;
+                font-size: 2.5em;
+                color: white;
+                transition: .2s;
+
+                @media (min-width: 900px) {
+                    &:hover {
+                        color: $secondColor;
+                    }
+                }
+
+                i.fa-chevron-left {
+                    filter: drop-shadow(1px 0px 3px black);
+                }
+
+                i.fa-chevron-right {
+                    filter: drop-shadow(-1px 0px 3px black);
+                }
+            }
+
+            .carousel__button__right {
+                right: 0;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            .carousel__button__left {
+                left: 0;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+
+        }
+
+        .carousel__nav {
+            @include flexCenter(row, nowrap);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.6;
+
+            .carousel__image__indicator {
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1.5px solid white;
+                margin: 0 20px;
+                filter: drop-shadow(-1px 1px 4px black);
+                cursor: pointer;
             }
 
             .carousel__image__indicator.current {

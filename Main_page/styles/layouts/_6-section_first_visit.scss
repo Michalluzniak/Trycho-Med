@@ -122,13 +122,13 @@ section.first__visit {
 
 }
 
-@media (orientation:landscape) and (min-width:30em) and (max-width:40em) {
+@media (orientation:landscape) and (min-width:30em) {
 
     section.first__visit {
         height: auto;
 
         h2 {
-            font-size: 3em;
+            font-size: 2.5em;
 
             &::after {
                 height: 2px;
@@ -138,7 +138,32 @@ section.first__visit {
 
         p {
             font-size: 1.5em;
-            width: 90%;
+            width: 75%;
+
+            &:nth-of-type(2):after {
+                height: 2px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (orientation:landscape) and (min-width:50.1em) and (max-width:70em) {
+
+    section.first__visit {
+
+        h2 {
+            font-size: 4em;
+
+            &::after {
+                height: 2px;
+                width: 250px;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            width: 75%;
 
             &:nth-of-type(2):after {
                 height: 2px;
