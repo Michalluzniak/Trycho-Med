@@ -205,7 +205,7 @@
 
 }
 
-@media (orientation: landscape) and (min-width:64em) and (max-width:70em) {
+@media (orientation: landscape) and (min-width:64em) and (max-width:90em) {
 
     #about__me {
         height: auto;
@@ -245,6 +245,20 @@
                 margin: 3% auto;
                 background-color: $primaryColor;
             }
+        }
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:70em) and (max-width:81.25em) {
+
+    #about__me {
+
+
+        p {
+            margin-top: 3%;
+            font-size: 1.7em;
+            margin-bottom: 5%;
         }
     }
 

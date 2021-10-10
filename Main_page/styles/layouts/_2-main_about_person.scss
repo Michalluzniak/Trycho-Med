@@ -185,3 +185,25 @@ main.about__person {
     }
 
 }
+
+@media (orientation: landscape) and (min-width:70em) and (max-width:81.25em) {
+
+    main.about__person {
+
+        div.introduction {
+
+            h1 {
+                font-size: 4em;
+
+                &:nth-of-type(2) {
+                    font-size: 4.5em;
+                }
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+    }
+
+}

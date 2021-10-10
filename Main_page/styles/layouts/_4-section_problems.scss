@@ -392,7 +392,7 @@
 
 }
 
-@media (orientation: landscape) and (min-width:64em) and (max-width:70em) {
+@media (orientation: landscape) and (min-width:64em) and (max-width:90em) {
 
     .problems__section {
         height: 150vh;
@@ -443,4 +443,60 @@
             }
         }
     }
+}
+
+
+@media (orientation: landscape) and (min-width:70em) and (max-width:81.25em) {
+
+    .problems__section {
+        height: 150vh;
+        width: 100%;
+
+        .problems__header {
+            height: 10vh;
+            width: 100%;
+
+            h2 {
+                @include sectionHeading;
+                line-height: 10vh;
+            }
+        }
+
+        .problems__container {
+            position: relative;
+            height: calc(100% - 8vh);
+            width: 100%;
+            background-image: url(../../../imgs/fixed_hairsV2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            .problems__points {
+
+                .allPoints {
+                    height: 80px;
+                    width: 80px;
+
+                    p {
+                        font-size: 1.5em;
+
+                    }
+                }
+            }
+
+            .diseases {
+                color: white;
+                font-size: 2.5em;
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+
+                p {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
 }
