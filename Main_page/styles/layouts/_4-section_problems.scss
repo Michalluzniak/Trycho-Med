@@ -31,7 +31,7 @@
             height: 100%;
             width: 100%;
             background-color: #000;
-            opacity: 0.2;
+            opacity: 0.3;
         }
 
         .problems__points {
@@ -186,18 +186,19 @@
                 .allPoints {
 
                     p {
-                        font-size: .8em;
+                        left: 140%;
+                        font-size: .7em;
+                        width: 100%;
                     }
                 }
             }
 
             .diseases {
-                font-size: 1.4em;
+                font-size: 1.3em;
 
                 p {
                     width: 90%;
                     margin-bottom: 5%;
-
                 }
             }
         }

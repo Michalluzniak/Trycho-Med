@@ -42,14 +42,20 @@ window.addEventListener("load", function () {
     carouselImages.append(firstClone);
     carouselImages.prepend(lastClone);
 
+
     let slideWidth = slides[index].clientWidth;
-
-    carouselImages.style.transform = `translateX(${-slideWidth * index}px)`;
-
 
     window.addEventListener('resize', () => {
         slideWidth = slides[index].clientWidth;
     })
+
+    window.addEventListener('orientationchange', () => {
+        carouselImages.style.transform = `translateX(${-100 * index}%`;
+        carouselImages.style.transition = '0s'
+    })
+
+
+    carouselImages.style.transform = `translateX(${-slideWidth * index}px)`;
 
 
     const autoSlideChange = () => {
@@ -60,7 +66,6 @@ window.addEventListener("load", function () {
             }
         }, 2000);
     }
-
 
     const infiniteCarousel = () => {
         let slides = [...carouselImages.children];
