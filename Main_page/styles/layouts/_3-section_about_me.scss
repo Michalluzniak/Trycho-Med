@@ -141,7 +141,7 @@
 
 //Landscape orientation
 
-@media (orientation:landscape) and (min-width:30em) {
+@media (orientation:landscape) and (min-width:30em) and (max-width:81.25em) {
 
     #about__me {
         text-align: center;
@@ -179,7 +179,7 @@
 
 }
 
-@media (orientation:landscape) and (min-width:50.1em) and (max-width:63.9em) {
+@media (orientation:landscape) and (min-width:50.1em) and (max-width:81.25em) {
 
     #about__me {
 
@@ -205,7 +205,7 @@
 
 }
 
-@media (orientation: landscape) and (min-width:64em) and (max-width:90em) {
+@media (orientation: landscape) and (min-width:64em) and (max-width:81.25em) {
 
     #about__me {
         height: auto;

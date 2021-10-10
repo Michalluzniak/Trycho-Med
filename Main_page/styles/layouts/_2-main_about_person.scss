@@ -119,7 +119,7 @@ main.about__person {
 
 //Landscape orientation
 
-@media (orientation:landscape) and (min-width:30em) and (max-width:50em) {
+@media (orientation:landscape) and (min-width:30em) and (max-width:81.25em) {
     main.about__person {
         background-position: 80%;
 
@@ -141,7 +141,7 @@ main.about__person {
 
 }
 
-@media (orientation:landscape) and (min-width:50.1em) and (max-width:63.9em) {
+@media (orientation:landscape) and (min-width:50.1em) and (max-width:81.25em) {
 
     main.about__person {
         background-position: 80%;
@@ -164,7 +164,7 @@ main.about__person {
 
 }
 
-@media (orientation: landscape) and (min-width:64em) and (max-width:70em) {
+@media (orientation: landscape) and (min-width:64em) and (max-width:81.25em) {
 
     main.about__person {
 

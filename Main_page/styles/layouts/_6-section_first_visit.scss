@@ -122,7 +122,9 @@ section.first__visit {
 
 }
 
-@media (orientation:landscape) and (min-width:30em) {
+//Landscape
+
+@media (orientation:landscape) and (min-width:30em) and (max-width:81.25em) {
 
     section.first__visit {
         height: auto;
