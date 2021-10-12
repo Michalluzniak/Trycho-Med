@@ -1,37 +1,25 @@
-@import "helpers/_typography";
-@import "helpers/_variables";
-@import "helpers/_mixins";
-@import "helpers/_reset";
+@import "../../Main_page/styles/helpers/_typography";
+@import "../../Main_page/styles/helpers/_variables";
+@import "../../Main_page/styles/helpers/_mixins";
+@import "../../Main_page/styles/helpers/_reset";
 
 
 @media (min-width:1024px) {
 
     html {
         scroll-behavior: smooth;
-        overflow-y: hidden;
     }
 }
 
 @import "layouts/_popup_phone";
-@import "layouts/_loading_animation";
 
 div.site__container {
     max-width: 1300px;
     margin: 0 auto;
 
-
-    &.active {
-        transition: .6s;
-        opacity: 1;
-    }
-
     @import "layouts/_1-header";
-    @import "layouts/_2-main_about_person";
-    @import "layouts/_3-section_about_me";
-    @import "layouts/_4-section_problems";
-    @import "layouts/_5-section_offer";
-    @import "layouts/_6-section_first_visit";
-    @import "layouts/_7-footer";
+    @import "layouts/_2-main_training";
+    @import "layouts/_3-footer";
 }
 
 @media (min-width:320px) and (max-width:1023px) {

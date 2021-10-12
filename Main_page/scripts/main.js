@@ -1,3 +1,21 @@
+//loading animation 
+
+const pageContent = document.querySelector('html');
+const loadingAnimation = document.querySelector('.loading__animation');
+
+
+window.addEventListener('load', () => {
+
+    setTimeout(() => {
+        pageContent.style.overflowY = 'auto';
+        loadingAnimation.style.opacity = '0';
+        setTimeout(() => {
+            loadingAnimation.style.display = 'none';
+        }, 500)
+
+    }, 2000)
+})
+
 // create div elements for problems section and
 window.addEventListener("load", function () {
 
@@ -208,3 +226,7 @@ window.addEventListener("load", function () {
     navButtons.forEach(btn => btn.addEventListener('click', closeSideMenu));
 
 });
+
+//ham menu black and white changer
+
+const mainAboutPerson = document.querySelector('.about__person')

@@ -6,27 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="example trycholog, Trycho Med">
     <script src="https://kit.fontawesome.com/d9b8bb9b33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="styles/style/side_page2.css">
     <script src="https://smtpjs.com/v3/smtp.js" defer></script>
-    <script src="mainPage.js" defer></script>
+    <script src="scripts/side_page2.js" defer></script>
     <title>Trycho Med - Trycholog Agata Szczepanowska - Przesczep włosów w Turcji</title>
 </head>
 
 <body>
+    <div class="popup__wrapper">
+        <a href="tel:222333456">
+            <div class="phone__popup">
+                <i class="fas fa-phone"></i>
+            </div>
+        </a>
+        <div class="contact__popup">
+            <div class="social__buttons">
+                <a href="https://www.facebook.com/Trycholog-Luba%C5%84-435187663711241/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="far fa-envelope"></i></a>
+                <a href="https://instagram.com/trychologia_holistycznie?utm_medium=made__by_link" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact__data">
+                <i class="fas fa-home"></i>
+                <p class="home">ul. Władysława łokietka 3, Lubań</p>
+                <i class="fas fa-phone"></i>
+                <p class="phone">575 951 128</p>
+            </div>
+            <p class="call__now">Zadzwoń</p>
+        </div>
+    </div>
     <div class="site__container">
         <header>
             <div class="logo">
                 <a href="../Main_page/Main_page.html" class="logo__interactive">Trycho Med logo</a>
             </div>
-            <nav>
+            <nav class="large__menu">
                 <ul>
                     <li><a href="../Main_page/Main_page.html#about__me" class="aboutMeBtn">o mnie</a></li>
                     <li><a href="../Main_page/Main_page.html#offer" class="offer">oferta</a></li>
                     <li><a href="../Side_page/side_page.html" class="training">szkolenia</a></li>
-                    <li><a href="../Side_page2/side_page2.html" class="graft">przeszczep</a></li>
-                    <li><a href="../Side_page2/side_page2.html#footer" class="contact">kontakt</a></li>
+                    <li><a href="side_page2.html" class="graft">przeszczep</a></li>
+                    <li><a href="#footer" class="contact">kontakt</a></li>
                 </ul>
             </nav>
+            <div class="small__menu">
+                <div class="ham__menu">
+                    <span></span>
+                </div>
+                <div class="side__menu">
+                    <div class="side__menu__header">
+                        <div class="logo">
+                            <a href="Main_page.html" class="logo__interactive">Trycho Med logo</a>
+                        </div>
+                    </div>
+                    <nav class="small__menu__nav">
+                        <ul>
+                            <li><a href="#about__me" class="aboutMeBtn nav__btn">o mnie</a></li>
+                            <li><a href="#offer" class="offer nav__btn">oferta</a></li>
+                            <li><a href="../Side_page/side_page.html" class="training nav__btn">szkolenia</a></li>
+                            <li><a href="../Side_page2/side_page2.html" class="graft nav__btn">przeszczep</a></li>
+                            <li><a href="#footer" class="contact nav__btn">kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <div class="side__menu__contact__container">
+                        <div class="social__buttons">
+                            <a href="https://www.facebook.com/Trycholog-Luba%C5%84-435187663711241/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="far fa-envelope"></i></a>
+                            <a href="https://instagram.com/trychologia_holistycznie?utm_medium=made__by_link"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="nav__contact__info">
+                            <div class="home__info__container">
+                                <i class="fas fa-home"></i>
+                                <p class="home">ul. Władysława łokietka 3, Lubań</p>
+                            </div>
+                            <div class="phone__info__container">
+                                <i class="fas fa-phone"></i>
+                                <p class="phone">575 951 128</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <footer id="footer">
             <div class="contact__header">
@@ -73,7 +136,6 @@
                 </div>
             </div>
             <div class="made__by">
-                <h2>made__byright &made__by; Trycho-Med</h2>
                 <p>Projekt i wykonanie: Michał Łuźniak</p>
             </div>
         </footer>

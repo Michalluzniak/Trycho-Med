@@ -1,0 +1,41 @@
+.loading__animation {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+    transition: .5s;
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+
+    span {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin: 0 10px;
+        background-color: #f6ae36;
+        border-radius: 50%;
+        animation: dots 2s ease-in-out infinite;
+
+        &:nth-of-type(2) {
+            background-color: $primaryColor;
+            animation-delay: .3s;
+        }
+
+        &:nth-of-type(3) {
+            background-color: $secondColor;
+            animation-delay: .6s;
+        }
+    }
+}
+
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.5) translateY(25px);
+
+    }
+}
